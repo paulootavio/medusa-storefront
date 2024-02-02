@@ -4,8 +4,8 @@
 // api de colecoes: https://docs.medusajs.com/api/store#product-collections_getcollections
 const client = useMedusaClient();
 debugger
-const  productsCategories  = await client.productCategories.list();
 const { product_categories } = await client.productCategories.list();
+const filter = ref("");
 </script>
 
 <template>
@@ -17,7 +17,7 @@ const { product_categories } = await client.productCategories.list();
     <div class="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
       <h2 class="text-2xl font-bold text-gray-900">Categorias</h2>
       <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
-        <div v-for="productCategorie in productsCategories.product_categories" :key="productCategorie.id" class="group relative">
+        <div v-for="productCategorie in product_categories" :key="productCategorie.id" class="group relative">
           <div class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
          
             </div>
