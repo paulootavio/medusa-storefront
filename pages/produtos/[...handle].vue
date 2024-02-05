@@ -54,7 +54,7 @@
                 quantity: 1
             });
 
-            router.push("/carrrinho");
+            router.push("/carrinho");
         } finally {
             loading.value = false;
         }

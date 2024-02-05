@@ -13,7 +13,7 @@
               Categorias
             </Button>
           </nuxt-link>
-          <nuxt-link to="/carrinho" active-class="[&>*]:font-bold">
+          <nuxt-link to="carrinho" active-class="[&>*]:font-bold">
             <Button variant="ghost" size="sm">
               Carrinho
             </Button>
